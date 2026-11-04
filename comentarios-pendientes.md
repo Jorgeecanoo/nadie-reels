@@ -12,3 +12,6 @@ REGLA DEL SORTEO (Jorge, 04/11/2026): SOLO SEGUIDORES. Entran en el sorteo de ca
 - 2026-11-04 03:16 · @ssunpetal: «De como funciona el sentimiento de enamorarse 🙌» — en sorteo, avisado (con requisito de seguir). sigue: NO (03:20) → solo entra si sigue antes del sorteo.
 
 Última revisión: 2026-11-04 03:20 (manual) · último comentario leído del reel 2026-11-04: @ssunpetal · seguidores: gstarr_4.7
+
+## Sorteo 2026-11-04 (10:40)
+- Sin sorteo: ningún comentario válido de seguidores hasta las 10:00 (@l.k_619 y @ssunpetal siguen marcados "sigue: NO"; la última revisión con seguidores es de las 03:20 y esta tarea no tenía navegador para recomprobarlo). Siguen pendientes: si empiezan a seguir, entran en el sorteo de mañana. Reel de hoy: mentalismo de la reserva.
