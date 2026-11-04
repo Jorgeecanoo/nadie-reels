@@ -55,3 +55,8 @@ Si Instagram no deja comentar ("No se pudo publicar el comentario"), parar las r
 ## Interacción con la gente (Jorge, 04/11/2026)
 - SIEMPRE dar ME GUSTA (corazón) a todos los comentarios válidos (no a spam/odio/contenido sexual o político).
 - Respuestas y textos con el tono travieso y algo chulesco del personaje, con respeto. Ejemplos de tono: "Apuntado. Aunque te aviso: compito contra el azar y suele ganar él 🎲", "Pregunta fácil. Te respondo en historias, que aquí no me cabe tanta sabiduría 👀".
+
+## MODO ACTUAL (Jorge, 04/11/2026 03:21): Jorge comenta por Nadie
+- Hasta nuevo aviso, Nadie NO comenta ni da likes desde el navegador (para que Instagram no bloquee la cuenta). Solo LEE comentarios y seguidores.
+- Nadie prepara las respuestas (con su tono) y se las manda a Jorge para que él las publique como "Responder" debajo de cada comentario y dé los likes.
+- Las historias sí se siguen publicando por Metricool.
