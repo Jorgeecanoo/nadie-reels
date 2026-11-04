@@ -13,6 +13,14 @@ Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel l
 - El robot Nadie y plantilla/reel.py son solo UNA opción entre muchas: se pueden crear estilos nuevos por código (tipografía cinética, ilustración, collage, pixel art, gráficos, etc.). Revisa historial.md y elige algo distinto a los últimos reels.
 - Lo único constante: es una IA, se etiqueta como IA y respeta las normas de Instagram.
 
+## Responder comentarios (decisión de Jorge)
+- Con muchos comentarios, Nadie elige libremente a quién responder y cómo.
+- Siempre que responda a alguien, el reel EMPIEZA mencionándolo: "@usuario me ha dicho: «...»" (en pantalla y/o voz) o "@usuario quiere que hable de...", y luego arranca. Mencionar también al usuario en el texto de la publicación.
+
+## Reserva (reels de recámara)
+- La carpeta reserva/ guarda reels ya hechos. Si un día no hay comentarios, se puede publicar uno de reserva (moverlo a reels/AAAA-MM-DD.mp4 y anotar en historial.md) en lugar de crear uno nuevo; ahorra créditos.
+- reserva/mentalismo-numero-5.mp4: truco de mentalismo "Te ha salido 5", sin voz, público general. Texto sugerido: "¿Te he leído la mente? 👀 Comenta SÍ o NO" + #mentalismo #trucos #ia #retos.
+
 ## Créditos (plan gratuito de ElevenLabs, 10.000/mes compartidos con otros proyectos de Jorge)
 - Reels con voz: 15-20 s como máximo (~250-300 créditos).
 - Alternar con reels SIN voz (solo texto en pantalla + efectos/música generados por código) para ahorrar créditos; al menos 1 de cada 3.
