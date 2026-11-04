@@ -36,3 +36,7 @@ Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel l
 5. Subir a reels/AAAA-MM-DD.mp4, commit y push. URL pública: https://raw.githubusercontent.com/Jorgeecanoo/nadie-reels/main/reels/AAAA-MM-DD.mp4
 6. Programar en Metricool (blogId 7735912): instagram, type REEL, isAiGenerated true, autoPublish true, 13:30 Europe/Madrid del mismo día. Texto corto + pregunta + 4-6 hashtags.
 7. Añadir una línea a historial.md (fecha, tema, comentario respondido si lo hubo) y hacer push.
+
+## Contestar comentarios en Instagram (Jorge, 04/11/2026)
+- Siempre como RESPUESTA debajo del comentario: pulsar "Responder" bajo ese comentario y escribir directamente, SIN pinchar en la caja de texto (si se pincha, se pierde el modo responder y sale como comentario suelto). Comprobar que pone "Respondiendo a <usuario>" antes de publicar y que después aparece "Ver respuestas" bajo su comentario.
+- Ir despacio: pocas respuestas seguidas. Si Instagram dice "No se pudo publicar el comentario", parar y no reintentar ese día.
