@@ -19,7 +19,7 @@ Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel l
 
 ## Reserva (reels de recámara)
 - La carpeta reserva/ guarda reels ya hechos. Si un día no hay comentarios, se puede publicar uno de reserva (moverlo a reels/AAAA-MM-DD.mp4 y anotar en historial.md) en lugar de crear uno nuevo; ahorra créditos.
-- (vacía: mentalismo-numero-5 publicado el 2026-11-04)
+- reserva/reto-pixel-intrusa.mp4: reto de atención estilo arcade/pixel art "¿Lo ves en 5 segundos?" (letra intrusa, 2 niveles), 19,5 s, sin voz, público gamer/adolescente. Ya trae el cierre del sorteo. Texto sugerido: "¿Cuántas has visto? 👾 Comenta 0, 1 o 2 (sin mentir, que lo noto)" + recordatorio de seguir + #reto #retovisual #gamer #ia #pixelart. Script: plantilla/reto_pixel.py.
 
 ## Créditos (plan gratuito de ElevenLabs, 10.000/mes compartidos con otros proyectos de Jorge)
 - Reels con voz: 15-20 s como máximo (~250-300 créditos).
