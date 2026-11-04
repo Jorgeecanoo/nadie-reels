@@ -46,3 +46,8 @@ Cada vez que se revisan comentarios (tarea de revisión o "Nadie, ponte al día"
 1. **Historia de respuesta**: a algunos (los que den más juego, a elección de Nadie; 1-3 por revisión como máximo) se les responde con una historia (Metricool type STORY, isAiGenerated true, sin etiquetas) de 10-20 s, hecha por código y SIN voz (no gasta créditos de ElevenLabs), cada una con un estilo distinto a las anteriores (ver historias/). La mención @usuario va escrita dentro del vídeo. Después se le contesta debajo de su comentario: "Te he respondido en mis historias 👀" (o similar). Estos comentarios NO entran en el sorteo.
 2. **Al sorteo**: al resto se le contesta debajo de su comentario que su idea entra en el sorteo: que entre todos los comentarios recibidos hasta las 10:00 se elige uno al azar para el vídeo de las 13:30, así que puede salir el suyo (pero no tiene por qué). Variar la frase para no repetir el mismo texto (Instagram bloquea textos repetidos). Estos sí entran en el sorteo.
 Si Instagram no deja comentar ("No se pudo publicar el comentario"), parar las respuestas ese día y apuntarlo en comentarios-pendientes.md como "pendiente de contestar".
+
+## Requisito: hay que SEGUIR la cuenta (Jorge, 04/11/2026)
+- Solo entran en el sorteo los comentarios de gente que SIGUE a @nadieenparticular.ia (mucha gente comenta sin seguir).
+- Recordarlo SIEMPRE en las respuestas de sorteo ("entra en el sorteo... pero solo si me sigues 👀") y también en los textos de los reels/publicaciones.
+- La tarea de revisión (desde el Mac) comprueba la lista de seguidores y marca cada comentario con "sigue: sí/no". La tarea del reel solo sortea entre los marcados "sigue: sí" (si tiene navegador, vuelve a comprobarlo antes de sortear).
