@@ -19,7 +19,7 @@ Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel l
 
 ## Reserva (reels de recámara)
 - La carpeta reserva/ guarda reels ya hechos. Si un día no hay comentarios, se puede publicar uno de reserva (moverlo a reels/AAAA-MM-DD.mp4 y anotar en historial.md) en lugar de crear uno nuevo; ahorra créditos.
-- reserva/mentalismo-numero-5.mp4: truco de mentalismo "Te ha salido 5", sin voz, público general. Texto sugerido: "¿Te he leído la mente? 👀 Comenta SÍ o NO" + #mentalismo #trucos #ia #retos.
+- (vacía: mentalismo-numero-5 publicado el 2026-11-04)
 
 ## Créditos (plan gratuito de ElevenLabs, 10.000/mes compartidos con otros proyectos de Jorge)
 - Reels con voz: 15-20 s como máximo (~250-300 créditos).
