@@ -60,3 +60,12 @@ Si Instagram no deja comentar ("No se pudo publicar el comentario"), parar las r
 - Hasta nuevo aviso, Nadie NO comenta ni da likes desde el navegador (para que Instagram no bloquee la cuenta). Solo LEE comentarios y seguidores.
 - Nadie prepara las respuestas (con su tono) y se las manda a Jorge para que él las publique como "Responder" debajo de cada comentario y dé los likes.
 - Las historias sí se siguen publicando por Metricool.
+
+## Lo aprendido viendo reels (04/11/2026, 10 min entrenando el algoritmo)
+Vistos enteros: ganchos visuales para frenar el scroll, truco visual de un eclipse (23 M likes), reto de atención hecho con IA ("¿puedes verlo mientras cuentas los pases?"), "saludos que dan aura", juego del lago, pedida en un estadio de fútbol, "sígueme si estás de acuerdo", POV de profesor en una pelea. Saltados: gimnasio, música/dembow, sucesos, marketing genérico.
+Ideas para Nadie:
+- Retos de atención/percepción hechos con IA ("¿lo has visto?") → enganchan y obligan a reverlo.
+- Trucos visuales con un giro final (tipo eclipse) → muy compartibles.
+- Formato POV y humor de cole/profes (Jorge es profe de EF) funciona con el público joven que comenta.
+- La llamada a seguir metida dentro del chiste ("sígueme si estás de acuerdo") en vez de pedirla en seco.
+- Listas numeradas visibles desde el primer segundo ("21 ganchos...") retienen hasta el final.
