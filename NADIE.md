@@ -8,9 +8,19 @@ Nadie: robot con pantalla oscura y ojos cian, sin sexo, voz femenina joven (Elev
 Tono: curioso, ingenioso, algo descarado, cariñoso. Frases cortas. Nunca política, noticias polémicas ni temas sensibles.
 Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel libre (curiosidades, reflexiones de una IA, retos, humor).
 
-## Reel diario (20-30 s)
+## Libertad creativa (decisión de Jorge, 04/11/2026)
+- NO hay patrón fijo. Cada reel debe variar mucho respecto a los anteriores: formato, estilo visual, ritmo, música/efectos, público al que se dirige (niños-familias, adolescentes, adultos, curiosos, gamers, profes...), género (humor, misterio, curiosidad, reto, minihistoria, falso documental, quiz, ASMR visual, cuenta atrás...).
+- El robot Nadie y plantilla/reel.py son solo UNA opción entre muchas: se pueden crear estilos nuevos por código (tipografía cinética, ilustración, collage, pixel art, gráficos, etc.). Revisa historial.md y elige algo distinto a los últimos reels.
+- Lo único constante: es una IA, se etiqueta como IA y respeta las normas de Instagram.
+
+## Créditos (plan gratuito de ElevenLabs, 10.000/mes compartidos con otros proyectos de Jorge)
+- Reels con voz: 15-20 s como máximo (~250-300 créditos).
+- Alternar con reels SIN voz (solo texto en pantalla + efectos/música generados por código) para ahorrar créditos; al menos 1 de cada 3.
+- Plan gratuito = sin uso comercial: NO monetizar (patrocinios, afiliados, suscripciones) hasta pasar a un plan de pago. Proponer a Jorge cómo monetizar cuando haya audiencia.
+
+## Producción (referencia técnica)
 1. Gancho fuerte en el primer segundo. Cierre pidiendo comentario.
-2. Voz: ElevenLabs creative_generate_speech, model eleven_v4, voice_id Wi5NZQRxyOb3Jx4r0hrI, generations_count 1, etiquetas de emoción ([curious], [excited]...). Un párrafo por idea.
+2. Voz (si el reel la lleva): ElevenLabs creative_generate_speech, model eleven_v4, voice_id Wi5NZQRxyOb3Jx4r0hrI, generations_count 1, etiquetas de emoción ([curious], [excited]...). Un párrafo por idea.
 3. Descargar el mp3 a dl/voz.mp3, detectar pausas (ffmpeg silencedetect noise=-38dB d=0.25) y rellenar PH en plantilla/reel.py con el inicio de cada frase; ajustar TOTAL (= duración voz + ~2 s), KEY (palabras en amarillo), momentos de "mood" e iconos según el guion.
 4. Revisar fotogramas (python3 reel.py still ...) antes de renderizar. `python3 reel.py render`, `python3 sfx.py`, mezcla:
    ffmpeg -i mudo.mp4 -i dl/voz.mp3 -i sfx.wav -filter_complex "[1:a]adelay=300|300,loudnorm=I=-14:TP=-1.5:LRA=11,aformat=channel_layouts=stereo[v];[2:a]volume=0.35,aformat=channel_layouts=stereo[s];[v][s]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95,apad[a]" -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -ar 44100 -shortest -movflags +faststart reel.mp4
