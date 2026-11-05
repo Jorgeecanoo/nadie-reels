@@ -12,7 +12,7 @@ REGLA DEL SORTEO (Jorge, 04/11/2026): SOLO SEGUIDORES. Entran en el sorteo de ca
 - 2026-11-04 03:16 · @ssunpetal: «De como funciona el sentimiento de enamorarse 🙌» — en sorteo, avisado (con requisito de seguir). sigue: SÍ (13:55) → GANADOR del sorteo 2026-11-05 — respondido 2026-11-05 (reel 13:30).
 
 ## Reel 2026-11-04 (mentalismo)
-- 2026-11-05 00:01 · @mako_pk: «Me puedes hacer un video de como funciona la economia pero no una historia un reel porfa» — en sorteo del 2026-11-06 (el del 05/11 ya se hizo a las 02:50). sigue: SÍ (02:58). Pide expresamente reel, no historia. Like y respuesta: pendientes de Jorge.
+- 2026-11-05 00:01 · @mako_pk: «Me puedes hacer un video de como funciona la economia pero no una historia un reel porfa» — sigue: SÍ (02:58). Respondido 2026-11-05 por decisión de Jorge con un reel propio (economía explicada con una isla), programado el 2026-11-06 a las 13:30. NO entra en el sorteo. Like y respuesta: pendientes de Jorge.
 
 Última revisión: 2026-11-05 02:58 (manual, navegador) · seguidores: mako_pk, ssunpetal, gstarr_4.7 · @l.k_619 sigue sin seguir
 
@@ -21,6 +21,9 @@ REGLA DEL SORTEO (Jorge, 04/11/2026): SOLO SEGUIDORES. Entran en el sorteo de ca
 
 ## Sorteo 2026-11-05 (02:50)
 - Ganador: @ssunpetal, elegido al azar (random.SystemRandom) entre 1 comentario válido de seguidores (@l.k_619 sigue marcado "sigue: NO"). Esta tarea no tenía navegador para recomprobar seguidores ni comentarios nuevos. Reel de las 13:30: "Laboratorio Nadie", cómo funciona enamorarse.
+
+## Sorteo 2026-11-06
+- SIN sorteo (decisión de Jorge, 05/11 03:10): el reel de las 13:30 del 06/11 ya está programado en Metricool (economía para @mako_pk). Los comentarios que lleguen hasta el 06/11 a las 10:00 pasan al sorteo del 2026-11-07.
 
 ## Mensajes privados
 - 2026-11-04 · @gstarr_4.7 (Abigail): «Estudia xq hay tantos acentos en el mundo» — Jorge le respondió por privado (le dio like) y se publicó historia de pizarra 13:51. Respuesta pendiente para Jorge: «Te he dado clase particular en mis historias 📚😏 Corre a verla antes de que borre la pizarra»

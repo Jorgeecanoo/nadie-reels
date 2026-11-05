@@ -22,6 +22,7 @@ Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel l
 - reserva/reto-pixel-intrusa.mp4: reto de atención estilo arcade/pixel art "¿Lo ves en 5 segundos?" (letra intrusa, 2 niveles), 19,5 s, sin voz, público gamer/adolescente. Ya trae el cierre del sorteo. Texto sugerido: "¿Cuántas has visto? 👾 Comenta 0, 1 o 2 (sin mentir, que lo noto)" + recordatorio de seguir + #reto #retovisual #gamer #ia #pixelart. Script: plantilla/reto_pixel.py.
 
 ## Créditos (plan gratuito de ElevenLabs, 10.000/mes compartidos con otros proyectos de Jorge)
+- ACTUALIZACIÓN 05/11/2026: Jorge ha subido el plan de ElevenLabs (ya no es el gratuito). Hay más margen para la voz; los límites de abajo quedan como referencia de ahorro, no como tope. Reels explicativos con voz pueden durar ~60 s.
 - Reels con voz: 15-20 s como máximo (~250-300 créditos).
 - Alternar con reels SIN voz (solo texto en pantalla + efectos/música generados por código) para ahorrar créditos; al menos 1 de cada 3.
 - Plan gratuito = sin uso comercial: NO monetizar (patrocinios, afiliados, suscripciones) hasta pasar a un plan de pago. Proponer a Jorge cómo monetizar cuando haya audiencia.
