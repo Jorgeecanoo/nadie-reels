@@ -38,20 +38,39 @@ def scene(t):
 
 # ---------- fondo fijo ----------
 MY0, MY1 = 560, 1440        # franja dibujada con supermuestreo
-def make_bg():
+def make_bg(kind="day"):
     a = np.zeros((H, W, 3))
     hz = 1150
+    sky = {"day": (SKY1, SKY2), "sunset": ((92, 70, 160), (255, 160, 110)), "night": ((10, 14, 40), (52, 48, 110))}[kind]
+    sea = {"day": (SEA1, SEA2), "sunset": ((235, 120, 120), (70, 50, 120)), "night": ((30, 45, 100), (8, 12, 40))}[kind]
     for y in range(H):
-        if y < hz: a[y] = np.array(mix(SKY1, SKY2, y / hz))
-        else: a[y] = np.array(mix(SEA1, SEA2, (y - hz) / (H - hz)))
+        if y < hz: a[y] = np.array(mix(sky[0], sky[1], y / hz))
+        else: a[y] = np.array(mix(sea[0], sea[1], (y - hz) / (H - hz)))
     im = Image.fromarray(a.astype(np.uint8))
     d = ImageDraw.Draw(im)
-    d.ellipse((800, 80, 980, 260), fill=(255, 236, 140))   # sol
-    for (x, y, s) in ((150, 640, 1.0), (760, 520, .8)):      # nubes
+    if kind == "day":
+        d.ellipse((800, 80, 980, 260), fill=(255, 236, 140))   # sol
+        clouds = (((150, 640, 1.0), (760, 520, .8)), (255, 255, 255))
+    elif kind == "sunset":
+        for i in range(6):                                       # reflejo del sol en el mar
+            y = 1175 + i * 34; w_ = 260 - i * 34
+            d.rounded_rectangle((540 - w_, y, 540 + w_, y + 12), radius=6, fill=(255, 200, 120))
+        clouds = (((90, 470, .9), (720, 600, 1.1)), (255, 190, 170))
+    else:
+        rs = random.Random(9)
+        for _ in range(140):
+            x, y, r = rs.uniform(0, W), rs.uniform(0, 1100), rs.choice((1.5, 2, 2.5, 3.5))
+            d.ellipse((x - r, y - r, x + r, y + r), fill=(255, 250, 220))
+        d.rounded_rectangle((640, 1190, 1020, 1202), radius=6, fill=(255, 236, 140))   # reflejo de la luna
+        d.rounded_rectangle((700, 1225, 960, 1235), radius=5, fill=(220, 200, 120))
+        clouds = ((), (0, 0, 0))
+    for (x, y, sc) in clouds[0]:
         for dx, dy, r in ((0, 0, 50), (55, -20, 60), (115, 0, 48)):
-            d.ellipse((x + dx * s - r * s, y + dy * s - r * s, x + dx * s + r * s, y + dy * s + r * s), fill=(255, 255, 255))
+            d.ellipse((x + dx * sc - r * sc, y + dy * sc - r * sc, x + dx * sc + r * sc, y + dy * sc + r * sc), fill=clouds[1])
     return im
 BG = make_bg()
+BG_SUNSET = make_bg("sunset")
+BG_NIGHT = make_bg("night")
 
 class D2:
     """ImageDraw con coordenadas de salida (1080x1920), dibujando en la capa x2."""
@@ -264,6 +283,7 @@ def mid_layer(t):
     sA = back((t - T[1] - .15) / .4); sB = back((t - T[1] - 1.0) / .4); sC = back((t - T[1] - 2.55) / .4)
     moodA = moodB = moodC = "ok"; armA = armC = 0.0
     if n == 2 and lt > 3.1: moodB = "no"
+    if n == 8: armA = armC = ease((lt - .6) / .4)
     if n == 4: armA = armC = ease((lt - 2.9) / .4); moodA = moodC = "wow" if lt > 2.9 else "ok"
     if n == 6 and lt > 2.4: moodA = moodB = moodC = "wow"
     if n == 5 and lt > 4.6: moodA = "wow"
@@ -274,6 +294,11 @@ def mid_layer(t):
     else:
         boat(d, XC + 40, 1300, ease((lt - 2.5) / .5), t)
     IY = 720   # altura de los objetos
+    if n >= 7:
+        fl = .85 + .15 * math.sin(t * 17) * math.sin(t * 7)
+        d.line([(330, 1252), (440, 1228)], 14, fill=TRUNK); d.line([(330, 1228), (440, 1252)], 14, fill=TRUNK)
+        d.poly([(345, 1240), (385, 1240 - 100 * fl), (425, 1240)], fill=(255, 120, 40))
+        d.poly([(360, 1240), (385, 1240 - 62 * fl), (410, 1240)], fill=(255, 210, 80))
     if n == 1:
         fish(d, XA, IY, back((lt - .45) / .35))
         banana(d, XB, IY + 40, back((lt - 1.3) / .35))
@@ -337,46 +362,54 @@ def face(d, cx, cy, r, wink=0.0):
     else: d.ellipse((cx + r * .45 - 16, cy - r * .3 - 22, cx + r * .45 + 16, cy - r * .3 + 22), fill=YEL)
     d.arc((cx - r * .5, cy - r * .2, cx + r * .5, cy + r * .55), 20, 160, fill=YEL, width=12)
 
+def card(d, cy, h, w=960, edge=None):
+    d.rounded_rectangle((540 - w / 2, cy - h / 2, 540 + w / 2, cy + h / 2), radius=34, fill=NAVY, outline=edge, width=4 if edge else 0)
+
 def hook(lt):
-    im = Image.new("RGB", (W, H), YEL); d = ImageDraw.Draw(im)
+    bgc = BG_SUNSET.copy()
+    face(ImageDraw.Draw(bgc), 540, 975, 130, 1.0 if 2.9 < lt < 3.3 or 6.2 < lt < 6.6 else 0.0)   # el sol es Nadie
+    im = island_frame(lt, bgc); d = ImageDraw.Draw(im)
     u = ease(lt / .4)
-    d.text((540, 430 - (1 - u) * 30), "@mako_pk me ha dicho:", font=F(52), fill=NAVY, anchor="mm")
+    d.text((540, 300 - (1 - u) * 30), "@mako_pk me ha dicho:", font=F(54), fill=WHITE, anchor="mm")
     u2 = back((lt - .35) / .45)
     if u2 > .01:
         bw, bh = 940 * u2, 380 * u2
-        d.rounded_rectangle((540 - bw / 2, 760 - bh / 2, 540 + bw / 2, 760 + bh / 2), radius=46, fill=WHITE, outline=NAVY, width=6)
-        d.polygon([(220, 940), (300, 940), (190, 1020)], fill=WHITE, outline=None)
+        d.rounded_rectangle((540 - bw / 2, 610 - bh / 2, 540 + bw / 2, 610 + bh / 2), radius=46, fill=WHITE, outline=NAVY, width=6)
+        d.polygon([(170, 428), (250, 428), (150, 345)], fill=WHITE, outline=NAVY, width=6)
+        d.line((172, 425, 248, 425), fill=WHITE, width=10)
         if u2 > .85:
             rich(d, "«¿Me haces un vídeo de cómo funciona la *economía?* Pero un reel, no una historia, porfa»",
-                 540, 760, F(50, "Medium"), NAVY, (230, 70, 120), 820)
+                 540, 610, F(50, "Medium"), NAVY, (230, 70, 120), 820)
     u3 = back((lt - 4.8) / .4)
     if u3 > .01:
-        rich(d, "Vale, vale. Te lo explico con *una* *isla.*", 540, 1180, F(int(70 * u3)), NAVY, (230, 70, 120), 900)
-    if lt > 5.6:
-        face(d, 540, 1420, 90, 1.0 if 6.2 < lt < 6.6 else 0.0)
+        card(d, 1525, 230 * u3)
+        if u3 > .8: rich(d, "Vale, vale. Te lo explico con *una* *isla.*", 540, 1525, F(62), WHITE, YEL, 860)
     return im
 
 def ending(lt, n):
-    im = Image.new("RGB", (W, H), YEL); d = ImageDraw.Draw(im)
+    t = T[n] + lt
+    im = island_frame(t, BG_NIGHT); d = ImageDraw.Draw(im)
+    face(d, 880, 190, 85, 1.0 if (n == 8 and 1.0 < lt < 1.5) else 0.0)   # la luna es Nadie
     if n == 7:
-        d.text((540, 420), "RESUMEN", font=F(40), fill=(230, 70, 120), anchor="mm")
+        f = F(34); w_ = f.getlength("RESUMEN") + 64
+        d.rounded_rectangle((540 - w_ / 2, 300, 540 + w_ / 2, 364), radius=32, fill=YEL)
+        d.text((540, 332), "RESUMEN", font=f, fill=NAVY, anchor="mm")
+        u = ease((lt - .2) / .5)
         rich(d, "La economía es *gente* *decidiendo* qué hacer con cosas que *no* *alcanzan* *para* *todos.*",
-             540, 760, F(70), NAVY, (230, 70, 120), 920, alpha=1)
-        u = ease((lt - 1.2) / .5)
-        if u > 0:
-            rich(d, "Especializarse · dinero · precios · interés · inflación", 540, 1120 + (1 - u) * 20, F(36, "Medium"), NAVY, NAVY, 920)
-        # miniaturas de la isla
-        for i, (col) in enumerate((ANA, BETO, CECI)):
-            x = 360 + i * 180; y = 1330
-            d.ellipse((x - 46, y - 46, x + 46, y + 46), fill=col)
+             540, 540 + (1 - u) * 30, F(58), WHITE, YEL, 940)
+        u2 = back((lt - 1.2) / .45)
+        if u2 > .01:
+            card(d, 1525, 200 * u2, edge=(110, 120, 190))
+            if u2 > .8: rich(d, "Especializarse · dinero · precios · interés · inflación", 540, 1525, F(42, "Medium"), WHITE, YEL, 880)
     else:
         u = back(lt / .45)
-        rich(d, "¿Lo has pillado o te lo repito *más* *despacio?*", 540, 560, F(int(68 * max(u, .01))), NAVY, (230, 70, 120), 920)
-        face(d, 540, 900, 120, 1.0 if 1.0 < lt < 1.5 else 0.0)
-        u2 = ease((lt - .8) / .5)
-        if u2 > 0:
-            rich(d, "Comenta tu próxima pregunta.", 540, 1160 + (1 - u2) * 20, F(54), NAVY, NAVY, 920)
-            rich(d, "Si me sigues, entras en el *sorteo* del reel de mañana.", 540, 1290 + (1 - u2) * 20, F(42, "Medium"), NAVY, (230, 70, 120), 900)
+        rich(d, "¿Lo has pillado o te lo repito *más* *despacio?*", 540, 440, F(int(64 * max(u, .01))), WHITE, YEL, 900)
+        u2 = back((lt - .8) / .45)
+        if u2 > .01:
+            card(d, 1525, 250 * u2, edge=(110, 120, 190))
+            if u2 > .8:
+                rich(d, "Comenta tu próxima pregunta.", 540, 1478, F(50), WHITE, WHITE, 880)
+                rich(d, "Si me sigues, entras en el *sorteo* del reel de mañana.", 540, 1570, F(38, "Medium"), WHITE, YEL, 880)
     return im
 
 def frame(t):
@@ -384,23 +417,25 @@ def frame(t):
     if n == 0 and lt < T[1] - .4: return hook(lt)
     if n >= 7:
         im = ending(lt, n)
-        if n == 7 and lt < .45:   # cortinilla: el amarillo sube
+        if n == 7 and lt < .45:   # cortinilla: cae la noche desde arriba
             base = island_frame(t)
             hgt = int(H * ease(lt / .45))
-            base.paste(im.crop((0, H - hgt, W, H)), (0, H - hgt))
+            base.paste(im.crop((0, 0, W, hgt)), (0, 0))
             return base
         return im
     im = island_frame(t)
-    if n == 0:   # el gancho sale hacia arriba
+    if n == 0:   # el atardecer sale hacia arriba y aparece el día
         hk = hook(lt)
         off = int(H * ease((lt - (T[1] - .4)) / .4))
         im.paste(hk.crop((0, off, W, H)), (0, 0))
     return im
 
-def island_frame(t):
+def island_frame(t, bg=None, only_island=False):
     n, lt = scene(t)
-    im = BG.copy()
+    im = (bg or BG).copy()
     lay = mid_layer(t).resize((W, MY1 - MY0), Image.LANCZOS)
+    if only_island:
+        out = Image.new("RGB", (W, H)); out.paste(lay, (0, MY0), lay); return out
     im.paste(lay, (0, MY0), lay)
     if 1 <= n <= 6: overlay_text(im, n, lt)
     return im
