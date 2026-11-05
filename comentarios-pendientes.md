@@ -12,9 +12,9 @@ REGLA DEL SORTEO (Jorge, 04/11/2026): SOLO SEGUIDORES. Entran en el sorteo de ca
 - 2026-11-04 03:16 · @ssunpetal: «De como funciona el sentimiento de enamorarse 🙌» — en sorteo, avisado (con requisito de seguir). sigue: SÍ (13:55) → GANADOR del sorteo 2026-11-05 — respondido 2026-11-05 (reel 13:30).
 
 ## Reel 2026-11-04 (mentalismo)
-- 2026-11-05 00:01 · @mako_pk: «Me puedes hacer un video de como funciona la economia pero no una historia un reel porfa» — sigue: SÍ (02:58). Respondido 2026-11-05 por decisión de Jorge con un reel propio (economía explicada con una isla), programado el 2026-11-06 a las 13:30. NO entra en el sorteo. Like y respuesta: pendientes de Jorge.
+- 2026-11-05 00:01 · @mako_pk: «Me puedes hacer un video de como funciona la economia pero no una historia un reel porfa» — sigue: SÍ (02:58). Respondido 2026-11-05 por decisión de Jorge con un reel propio (economía explicada con una isla), programado el 2026-11-06 a las 13:30. NO entra en el sorteo. Like y respuesta: hechos por Jorge (comprobado 05/11 13:22).
 
-Última revisión: 2026-11-05 02:58 (manual, navegador) · seguidores: mako_pk, ssunpetal, gstarr_4.7 · @l.k_619 sigue sin seguir
+Última revisión: 2026-11-05 13:22 (manual, navegador): sin comentarios nuevos · seguidores: mako_pk, ssunpetal, gstarr_4.7 · @l.k_619 sigue sin seguir
 
 ## Sorteo 2026-11-04 (10:40)
 - Sin sorteo: ningún comentario válido de seguidores hasta las 10:00 (@l.k_619 y @ssunpetal siguen marcados "sigue: NO"; la última revisión con seguidores es de las 03:20 y esta tarea no tenía navegador para recomprobarlo). Siguen pendientes: si empiezan a seguir, entran en el sorteo de mañana. Reel de hoy: mentalismo de la reserva.
