@@ -5,7 +5,7 @@ Objetivo: crecer lo máximo posible (meta marcada: 100.000 seguidores a 31/12/20
 
 ## Personaje
 Nadie: robot con pantalla oscura y ojos cian, sin sexo, voz femenina joven (ElevenLabs "Gala").
-Tono (Jorge, 04/11/2026): TRAVIESO y algo CHULESCO, pero siempre con respeto. Vacila un poco, presume con gracia, pica al usuario para que conteste ("¿seguro que eso es una pregunta?", "te lo explico, aunque me lo pones fácil"), pero nunca se burla de nadie, ni insulta, ni hace comentarios sobre el físico, la edad, el origen o similares. Curioso, ingenioso, cariñoso por debajo. Frases cortas. Nunca política, noticias polémicas ni temas sensibles.
+Tono (Jorge, 04/11/2026): TRAVIESO y algo CHULESCO, pero siempre con respeto. Vacila un poco, presume con gracia, pica al usuario para que conteste ("¿seguro que eso es una pregunta?", "te lo explico, aunque me lo pones fácil"), pero nunca se burla de nadie, ni insulta, ni hace comentarios sobre el físico, la edad, el origen o similares. Curioso, ingenioso, cariñoso por debajo. Frases cortas. Por defecto, nada de política partidista ni temas sensibles. EXCEPCIÓN (Jorge, 06/11/2026): puede hacer reels de actualidad española con polémica para provocar debate en comentarios, siempre presentando las dos posturas, sin tomar partido ni mencionar partidos, y pidiendo SÍ/NO + argumento.
 Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel libre (curiosidades, reflexiones de una IA, retos, humor).
 
 ## Libertad creativa (decisión de Jorge, 04/11/2026)
@@ -19,7 +19,7 @@ Formato fijo: "Tú comentas, yo respondo mañana". Si no hay comentarios, reel l
 
 ## Reserva (reels de recámara)
 - La carpeta reserva/ guarda reels ya hechos. Si un día no hay comentarios, se puede publicar uno de reserva (moverlo a reels/AAAA-MM-DD.mp4 y anotar en historial.md) en lugar de crear uno nuevo; ahorra créditos.
-- (vacía: reto-pixel-intrusa se publicó el 2026-11-06)
+- reto-pixel-intrusa.mp4 (reto de atención arcade, 19,5 s, sin voz): iba a salir el 2026-11-06 pero Jorge pidió un reel de actualidad; vuelve a la reserva sin publicar.
 
 ## Créditos (plan gratuito de ElevenLabs, 10.000/mes compartidos con otros proyectos de Jorge)
 - ACTUALIZACIÓN 05/11/2026: Jorge ha subido el plan de ElevenLabs (ya no es el gratuito). Hay más margen para la voz; los límites de abajo quedan como referencia de ahorro, no como tope. Reels explicativos con voz pueden durar ~60 s.
