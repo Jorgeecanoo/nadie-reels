@@ -24,6 +24,7 @@ REGLA DEL SORTEO (Jorge, 04/11/2026): SOLO SEGUIDORES. Entran en el sorteo de ca
 
 ## Sorteo 2026-11-06
 - Hay sorteo NORMAL (el reel de economía se adelantó al 05/11 13:43 a petición de Jorge, así que el hueco de las 13:30 del 06/11 queda libre). Entran los comentarios de seguidores recibidos hasta el 06/11 a las 10:00.
+- Resultado (10:40): SIN SORTEO. Ningún comentario válido de seguidores hasta las 10:00 (solo queda @l.k_619, marcado "sigue: NO"; última revisión con seguidores 05/11 13:22; esta tarea no tenía navegador para recomprobar). Reel de hoy: reto pixel de la reserva.
 
 ## Mensajes privados
 - 2026-11-04 · @gstarr_4.7 (Abigail): «Estudia xq hay tantos acentos en el mundo» — Jorge le respondió por privado (le dio like) y se publicó historia de pizarra 13:51. Respuesta pendiente para Jorge: «Te he dado clase particular en mis historias 📚😏 Corre a verla antes de que borre la pizarra»
