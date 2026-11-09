@@ -262,7 +262,7 @@ def frame(i):
             for k in range(26):
                 bx = k * 44 - 20
                 hgt = 900 + (k * 137) % 300
-                tip = (bx + 30 + sway + (k % 3) * 10, H - hgt - hide * 1200)
+                tip = (bx + 30 + sway + (k % 3) * 10, H - hgt + hide * 1300)
                 d.polygon([(bx, H), (bx + 60, H), tip], fill=(30 + (k % 4) * 12, 90 + (k % 5) * 14, 40))
         # rótulo de especie
         if S_BED + 0.4 <= t < S_ALARM:
