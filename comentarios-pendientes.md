@@ -32,5 +32,8 @@ REGLA DEL SORTEO (Jorge, 04/11/2026): SOLO SEGUIDORES. Entran en el sorteo de ca
 ## Sorteo 2026-11-08 (10:40)
 - SIN SORTEO: ningún comentario válido de seguidores hasta las 10:00 (solo queda @l.k_619, marcado "sigue: NO"; última revisión con seguidores 05/11 13:22; esta tarea no tenía navegador para recomprobar). Reel de hoy: ilusión óptica de post-imagen (nuevo). Datos Metricool del reto pixel (07/11): 144 vis., 109 alcance, 0 likes, 0 comentarios, 8,4 s de visionado medio (de 19,5 s).
 
+## Sorteo 2026-11-09 (10:40)
+- SIN SORTEO: ningún comentario válido de seguidores hasta las 10:00 (solo queda @l.k_619, marcado "sigue: NO"; última revisión con seguidores 05/11 13:22; esta tarea no tenía navegador para recomprobar). Reel de hoy: falso documental "El humano en lunes" (nuevo). Datos Metricool de la ilusión óptica (08/11): 135 vis., 111 alcance, 2 likes, 0 comentarios, 9 COMPARTIDOS, 10,1 s de visionado medio (de 22 s).
+
 ## Mensajes privados
 - 2026-11-04 · @gstarr_4.7 (Abigail): «Estudia xq hay tantos acentos en el mundo» — Jorge le respondió por privado (le dio like) y se publicó historia de pizarra 13:51. Respuesta pendiente para Jorge: «Te he dado clase particular en mis historias 📚😏 Corre a verla antes de que borre la pizarra»
